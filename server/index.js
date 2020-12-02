@@ -31,18 +31,18 @@ if ((process.env.TRUST_PROXY || '').toUpperCase() === 'TRUE') {
 
 
 // force https: https://stackoverflow.com/questions/8605720/how-to-force-ssl-https-in-express-js
-app.use(function(req, res, next) {
-  var schema = req.headers['x-forwarded-proto'];
+// app.use(function(req, res, next) {
+//   var schema = req.headers['x-forwarded-proto'];
 
-  if (schema === 'https') {
-    // Already https; don't do anything special.
-    next();
-  }
-  else {
-    // Redirect to https.
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-});
+//   if (schema === 'https') {
+//     // Already https; don't do anything special.
+//     next();
+//   }
+//   else {
+//     // Redirect to https.
+//     res.redirect('https://' + req.headers.host + req.url);
+//   }
+// });
 
 
 app.set('view engine', 'ejs')
