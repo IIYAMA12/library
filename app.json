@@ -50,6 +50,11 @@
     "NPM_TOKEN": {
       "description": "Enter an NPM token if you are using private modules.",
       "required": false
+    },
+    "TRUST_PROXY": {
+      "description": "This should force https?",
+      "required": true,
+      "value": "TRUE"
     }
   }
 }
