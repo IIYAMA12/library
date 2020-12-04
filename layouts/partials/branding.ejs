@@ -4,9 +4,9 @@
     <% if (shouldLink) { %><a id="branding-heading-link" href="/"><% } %>
       
       <span class="visually-hidden"><%- template('branding.org') %></span>
-      <%/*
-      <img src=<%- template('branding.icon') %> class="logo" alt="<%- template('branding.org') %>">
-       */%>
+    
+      <img style="display: none;" src=<%- template('branding.icon') %> class="logo" alt="<%- template('branding.org') %>">
+       
       <% if (shouldLink) { %></a><% } %>
   </h2>
   <h3 class="branding-label">
