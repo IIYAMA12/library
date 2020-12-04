@@ -4,9 +4,9 @@ const router = require('express-promise-router')()
 
 const {Datastore} = require('@google-cloud/datastore')
 
-const moment = require('moment')
+const moment = require('moment');
 moment.locale("nl");
-console.log(moment);
+
 
 const log = require('../logger')
 const {getMeta} = require('../list')

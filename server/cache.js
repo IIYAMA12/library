@@ -1,6 +1,7 @@
 'use strict'
 
-const moment = require('moment')
+const moment = require('moment');
+moment.locale("nl");
 const middlewareRouter = require('express-promise-router')()
 
 const log = require('./logger')

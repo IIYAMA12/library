@@ -1,7 +1,8 @@
 'use strict'
 
 const request = require('supertest')
-const moment = require('moment')
+const moment = require('moment');
+moment.locale("nl");
 const sinon = require('sinon')
 const {expect} = require('chai')
 
