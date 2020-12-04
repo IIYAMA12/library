@@ -23,13 +23,13 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Vragen? Neem contact op met Luuk
+  helpText: Gemaakt met NYTimes Library | Heb je vragen? <a href="mailto:sophie.stadhouders@ftm.nl">Stuur een mailtje naar Sophie.</a>
   defaultEmail: info@ftm.nl
   buttons:
     edit: Bewerk deze pagina
     move: Verplaats deze pagina
-    create: Create New Page
-    viewFolder: View Folder
+    create: Maak een nieuwe pagina
+    viewFolder: Bekijk Google drive
 
 # pages/search, partials/search
 search:
