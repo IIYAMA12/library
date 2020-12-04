@@ -4,7 +4,7 @@ branding:
   name: Follow the Money
   prettyName: Team FTM
   org: Follow the Money
-  icon: /assets/images/FTM_beeldmerk_V2_light.png
+  icon: /assets/images/vector-beeldmerk-web.svg
   favicon: /assets/images/ftm.ico
 
 # pages/categories, pages/index, partials/search
