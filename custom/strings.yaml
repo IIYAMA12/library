@@ -10,7 +10,7 @@ branding:
 # pages/categories, pages/index, partials/search
 landing:
   tagline: One place for your organization's documents.
-  viewAll: Bekijk alles
+  viewAll: Alle pagina's
   quickLink: <a href="/get-started">Welkom bij de club!</a>
   modules:
     - tag: team
@@ -41,7 +41,7 @@ search:
       folder: !!js/function (path, folder) => `Gearchiveerd onder <a class="folder" href=${path}><span>${folder}</span></a>`
       person: !!js/function (lastUser) => `Laatst bewerkt door <span class='author'>${lastUser}`
     none:
-      kicker: !!js/function (query) => `There are no results for '${query}'`
+      kicker: !!js/function (query) => `Er zijn geen resultaten voor '${query}'`
       suggestion: Een nieuwe pagina aanvragen? Neem contact op met Luuk of Sophie.
 
 # categories/default
