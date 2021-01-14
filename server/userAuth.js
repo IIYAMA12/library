@@ -47,8 +47,8 @@ router.get('/logout', (req, res) => {
 })
 
 router.get('/auth/redirect', passport.authenticate('google'), (req, res) => {
-  console.log("jorik", req.session.authRedirect);
-  res.redirect(req.session.authRedirect || '/')
+  //res.redirect(req.session.authRedirect || '/')
+  res.redirect('https://' + req.headers.host + req.session.authRedirect || '/');
 })
 
 router.use((req, res, next) => {
@@ -65,8 +65,8 @@ router.use((req, res, next) => {
   }
 
   log.info('User not authenticated')
-  log.info("req.path" + req.path);
-  req.session.authRedirect = req.path;//.replace("http://", "https://");
+
+  req.session.authRedirect = req.path;
   res.redirect('/login')
 })
 
