@@ -13,7 +13,7 @@
         <% } %>
         
         <% all.forEach((category) => { %>
-          <%- include('childrenList', {kicker: category.prettyName, children: category.children, link: category.path}) %>
+          <%- include('../partials/childrenList', {kicker: category.prettyName, children: category.children, link: category.path}) %>
         <% }) %>
 
         <!-- Hide sibling docs on normal pages -->
