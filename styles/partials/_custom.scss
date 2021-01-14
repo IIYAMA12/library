@@ -19,3 +19,17 @@
 // 
 // // or import them from a nearby file
 // @import "more-custom-stuff";
+
+
+.current-page-title {
+  display:none;
+}
+
+.g-left-panel {
+  .current-page-title {
+    display: initial;
+  }
+  .home-page-link {
+    display: none;
+  }
+}
