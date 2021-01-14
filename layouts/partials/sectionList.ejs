@@ -11,7 +11,7 @@
       <ul class="subsection">
         <% section.subsections.forEach((subsection) => { %>
         <li>
-          <a href="<%- subsection.url %>"> test <%= subsection.name %></a>
+          <a href="<%- subsection.url %>"> <%= subsection.name %></a>
         </li>
         <% }) %>
       </ul>
@@ -19,3 +19,8 @@
     <% } %>
   <% }) %>
 </ul>
+
+<% all.forEach((category) => { %>
+  <%- include('childrenList', {kicker: category.prettyName, children: category.children, link: category.path}) %>
+<% }) %>
+
