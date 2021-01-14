@@ -11,6 +11,11 @@
           <!-- is this TOC -->
           <%- include ../partials/sectionList %>
         <% } %>
+        
+        <% all.forEach((category) => { %>
+          <%- include('childrenList', {kicker: category.prettyName, children: category.children, link: category.path}) %>
+        <% }) %>
+
         <!-- Hide sibling docs on normal pages -->
         <!-- <% if (locals.siblings && siblings.length) { %>
         <%- include('../partials/siblingList', {kicker: template('folder.siblingList.heading')}) %>
