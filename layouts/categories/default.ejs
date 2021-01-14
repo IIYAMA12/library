@@ -16,11 +16,11 @@
         <!-- Hide sibling docs on normal pages -->
         <% if (locals.siblings && siblings.length) { %>
         <%- include('../partials/siblingList', {kicker: template('folder.siblingList.heading')}) %>
+        <p>Je bent nu op pagina: <b><%=locals.title%></b></p>
         <% } %>
       </div>
 
       <div class="g-main-content">
-        <p>Je bent nu op pagina <b><%=locals.title%></b></p>
         <% if (locals.content) { %>
         <%- content %>
         <% } %>
@@ -28,7 +28,6 @@
         <% if (locals.children && children.length) { %>
         <%- include('../partials/childrenList', {children, kicker: template('folder.childrenList.kicker', title)}) %>
         <% } %>
-        
       </div>
 
       <%- include('../partials/footer', { pageType: 'document', topLevelFolder: url.split('/')[1] }) %>
