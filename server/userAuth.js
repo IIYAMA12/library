@@ -47,6 +47,7 @@ router.get('/logout', (req, res) => {
 })
 
 router.get('/auth/redirect', passport.authenticate('google'), (req, res) => {
+  console.log("jorik", req.session.authRedirect);
   res.redirect(req.session.authRedirect || '/')
 })
 
