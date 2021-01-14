@@ -9,12 +9,12 @@ branding:
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: One place for your organization's documents.
+  tagline: Informatie voor werknemers. 
   viewAll: Alle pagina's
   quickLink: <a href="/get-started">Welkom bij de club!</a>
   modules:
     - tag: team
-      label: Find op basis van team
+      label: Zoeken op basis van team
       style: button
     - tag: featured
       label: Handige pagina's
